@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.progkhalifah.testingfinalproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Rating_Student"></activity>
+        <activity android:name=".Recommendation_letter_page" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ForgetPassword"
+            android:parentActivityName=".SignIn" />
+        <activity android:name=".CR_Page" />
+        <activity android:name=".Home_Page" />
+        <activity android:name=".WaitingPage" />
+        <activity android:name=".Create_New_Account" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".Add_Post_Page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

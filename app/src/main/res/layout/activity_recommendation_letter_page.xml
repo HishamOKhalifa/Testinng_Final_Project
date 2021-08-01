@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_page"
+    tools:context=".Recommendation_letter_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background_page"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profile_image"
+                android:src="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                android:id="@+id/txt_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:text="Recommendation Letter" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/txt_how_to_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="How To Write ? "
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Already_have_recommendation_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/color_buttons"
+                android:textStyle="bold"
+                android:text="Already Have Recommendation Letter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact Information "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_contract_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="If you’re writing a formal printed letter, include your contact information, as well as the recipient’s information, at the top of the letter. "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Greeting "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_greeting_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="If you are writing a personal recommendation letter, include a salutation to start your letter (Dear Dr. Smith, or Dear Ms. Jones, for example). "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paragraph 1: Introduction "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_1_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Explain why you're writing and how you are connected to the person you are recommending, including how you know them, and for how long. "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paragraph 2/3 - Why You are Writing "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_2_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share information on the person you are writing about, including why they are qualified and what they have to offer. It's fine to include more than one paragraph to provide details of the student's academic and work performance. Including examples of how they have excelled is a good way to show how the person is qualified.
+ "
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paragraph 4 – Summary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Paragraph_4_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Write a brief summary of why you are recommending the person. Mention that highly recommend the person or that you recommend without reservation or something similar."
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                /><TextView
+                android:id="@+id/txt_Paragraph_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paragraph 5 – Conclusion"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:id="@+id/txt_Paragraph_5_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Offer to share more information and let the reader know how to contact you (phone, email, etc.) for a follow-up conversation."
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Letter_Closing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Letter Closin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_Letter_Closing_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End your letter with a formal letter closing and your name and title. If you are mailing a printed letter, include your signature underneath your typed name:
+
+Sincerely,
+"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_Signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Signature (for hard copy letter)"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Email_Recommendation_Closing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email Recommendation Closing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texts"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Email_Recommendation_Closing_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="If you’re sending an email, include your contact information in your signature:
+
+Your Name,
+Phone and
+Email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_recommendation"
+                android:textSize="15sp"
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

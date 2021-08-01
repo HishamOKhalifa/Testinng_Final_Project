@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_baseline_notifications"
+        android:title="notification"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        />
+
+    <item
+        android:id="@+id/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_baseline_search"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="search"
+        />
+
+
+
+
+</menu>

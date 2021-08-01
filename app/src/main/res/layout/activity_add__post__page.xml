@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_page"
+    tools:context=".Add_Post_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <!--<ImageButton
+            android:id="@+id/btn_back_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+
+            />-->
+
+        <TextView
+            android:id="@+id/txt_Required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="*All Field Required"
+            android:textColor="@color/color_texts"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtxt_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Title Job"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/color_buttons"
+            android:textColorHint="@color/color_buttons"
+
+
+            />
+
+        <EditText
+            android:id="@+id/edtxt_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minLines="6"
+            android:textSize="20sp"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:hint="Job Description*"
+            android:textColor="@color/color_buttons"
+            android:textColorHint="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtxt_responsibilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+
+            android:hint="Responsibilities*"
+            android:textColor="@color/color_buttons"
+            android:textColorHint="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtxt_requirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+
+            android:hint="Requirements*"
+            android:textColor="@color/color_buttons"
+            android:textColorHint="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtxt_company_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Company's Mission*"
+            android:textColor="@color/color_buttons"
+            android:textColorHint="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_Qualifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Qualifications*"
+            android:textColor="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_Bachelor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachelor"
+
+                android:textColor="@color/color_texts"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_Master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Master"
+                android:textColor="@color/color_texts"
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_PhD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="PhD"
+                android:textColor="@color/color_texts"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_Experience_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Experience Level*"
+            android:textColor="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_Entry_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_texts"
+
+                android:text="Entry Level"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_Middle_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Middle Level"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/color_texts"
+
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_Senior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senior"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/color_texts"
+
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_job_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Job Type*"
+            android:textColor="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_full_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_texts"
+
+                android:text="Full Time"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_part_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part Time"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_texts"
+
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contract"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_texts"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_remote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_texts"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Department*"
+            android:textColor="@color/color_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk_IT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT"
+
+                android:textColor="@color/color_texts"
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Business"
+                android:textColor="@color/color_texts"
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/chk_Account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Account"
+                android:textColor="@color/color_texts"
+
+                />
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_push_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push Post"
+            android:background="@drawable/shapecorner"
+            android:layout_marginBottom="80dp"
+
+
+
+            />
+
+
+        <!--
+
+-->
+    </LinearLayout>
+
+
+</ScrollView>
